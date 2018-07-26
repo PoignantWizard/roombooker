@@ -1,6 +1,4 @@
-===========================
 #Room Booker
-===========================
 
 This app automates the process of uploading timetable data in a CSV
 file to [https://www.schoolbooking.com](https://www.schoolbooking.com)
@@ -24,7 +22,6 @@ We just needed an automated method of uploading timetable data that
 would work for our setup. 
 
 ##Dependencies 
------------
 
 roombooker requires chrome driver ([http://chromedriver.chromium.org/](http://chromedriver.chromium.org/)) 
 to be in an accessible directory. 
@@ -34,7 +31,6 @@ on the machine that will be running roombooker
 
 
 ##Quick start
------------
 
 1. Run roombooker to begin. 
 
@@ -75,7 +71,6 @@ Don't forget to generate a new CSV file before running roombooker,
 especially if running as part of a scheduled job. 
 
 ## Contributing
---------------
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our 
 code of conduct. 
@@ -83,12 +78,10 @@ code of conduct.
 This app is written in python 3.6. 
 
 ## Authors
---------------
 
 * **PoignantWizard** - *Initial work* 
 
 ## License
---------------
 
 This project is licensed under the 3-Clause BSD License - see 
 the [LICENSE.md](LICENSE.md) file for details. 
