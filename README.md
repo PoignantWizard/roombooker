@@ -3,7 +3,7 @@
 ===========================
 
 This app automates the process of uploading timetable data in a CSV
-file to https://www.schoolbooking.com 
+file to [https://www.schoolbooking.com](https://www.schoolbooking.com)
 
 schoolbooking.com has its own interface (using the Zinet client) to 
 push data from a student records system to an institution's instance 
@@ -19,13 +19,17 @@ way through your instance of the school booking web app and upload
 your CSV file. It can take user input each time its run or you can 
 set up a configuration file, allowing it to be run by scheduled job. 
 
+We're not affiliated with [https://www.schoolbooking.com](https://www.schoolbooking.com) in any way. 
+We just needed an automated method of uploading timetable data that 
+would work for our setup. 
+
 ##Dependencies 
 -----------
 
-roombooker requires chrome driver (http://chromedriver.chromium.org/) 
+roombooker requires chrome driver ([http://chromedriver.chromium.org/](http://chromedriver.chromium.org/)) 
 to be in an accessible directory. 
 
-You will also need Google Chrome installed https://www.google.com/chrome/ 
+You will also need Google Chrome installed [https://www.google.com/chrome/](https://www.google.com/chrome/) 
 on the machine that will be running roombooker
 
 
@@ -36,13 +40,13 @@ on the machine that will be running roombooker
 
 2. It will ask you for a series of inputs: 
     * the file path the chrome driver
-    * the URL to your instance of schoolbooking.com
+    * the URL to your instance of [schoolbooking.com](https://www.schoolbooking.com) 
     * the file path to your CSV file containing your timetable data
     * a username and password with permissions on your instance 
-      of schoolbooking.com to upload timetable data 
+      of [schoolbooking.com](https://www.schoolbooking.com) to upload timetable data 
 
 3. It will launch an automated instance of chrome, log into your 
-   instance    of schoolbooking.com, navigate to the upload page 
+   instance of [schoolbooking.com](https://www.schoolbooking.com), navigate to the upload page 
    and upload your timetable data. It will then log out and close 
    the browser. 
 

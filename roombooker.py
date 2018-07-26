@@ -24,7 +24,7 @@ class userInput():
                 + "\n\nPath to web driver: " + self.webDriver
 
 
-def get_deets():
+def get_details():
     """Capture user data"""
     # Chrome web driver
     webDriver = input("What's the path to the Chrome webdriver? (Leave blank to default to current directory) ")
@@ -266,7 +266,7 @@ def main():
 
     # run room uploader without using a configuration file
     elif args.noconfig:
-        data = get_deets()
+        data = get_details()
         room_upload(data)
     
     # read config file and upload timetable data without issuing user prompts
@@ -275,7 +275,7 @@ def main():
             webDriver, institution = config_reader_general()
             for inst in institution:
                 try:
-                    institutionKey, username, password, uploadCsv = config_reader_institution(inst, args.quiet)
+                    institutionKey, username, password, uploadCsv = config_reader_institution(inst, True)
                     data = userInput(webDriver, institutionKey, username, password, uploadCsv)
                     room_upload(data)
                 except:
@@ -296,7 +296,7 @@ def main():
                     print("Failed to read institution data.")
                     check = input("Would you like to enter details manually (y/n)? ")
                     if check == 'y':
-                        data = get_deets()
+                        data = get_details()
                     else:
                         print("Quitting...")
                         quit()
@@ -306,7 +306,7 @@ def main():
             print("No configuration file found.\n")
             check = input("Would you like to enter details manually (y/n)? ")
             if check == 'y':
-                data = get_deets()
+                data = get_details()
                 room_upload(data)
             else:
                 print("Quitting...")
