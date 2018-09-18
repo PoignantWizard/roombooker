@@ -75,7 +75,7 @@ def room_upload(userInput):
 
         # navigate to the import page
         driver.get('https://secure.schoolbooking.com/apps/administration/academic_index.php')
-        driver.find_element_by_xpath("//a[contains(@onclick, 'academic_import')]").click()
+        driver.find_element_by_link_text("Import/Export Lessons").click()
         driver.find_element_by_xpath("//div[contains(@onclick, 'academic_import_1_browse.php?sims=no')]").click()
 
         # upload room booking csv data
